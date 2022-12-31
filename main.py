@@ -16,7 +16,7 @@ class CoffeeMachine:
 
     @staticmethod
     def take_choice():
-        """This method takes coffee choice(input) of the user and return it"""
+        """This method takes coffee choice(input) of the user and returns it"""
         choice = input(
             "What would you like? (espresso/latte/cappuccino): \n").lower()
         return choice
@@ -34,7 +34,7 @@ class CoffeeMachine:
         return self.money_earned
 
     def update_resources(self):
-        """This method updates the resources according the purchase"""
+        """This method updates the resources according to the purchase"""
         for ingredient, amount in self.choice_ingredients.items():
             resources[ingredient] = resources[ingredient] - amount
 
@@ -126,5 +126,5 @@ class CoffeeMachine:
             self.starter_terminator()
 
 
-# <-------Instance of CoffeeMachine Object-------
+# <-------Instance of CoffeeMachine Object------->
 coffee_machine = CoffeeMachine()
